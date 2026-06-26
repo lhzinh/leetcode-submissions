@@ -1,4 +1,6 @@
 /* Write your T-SQL query statement below */
-select FirstName, LastName, City, State
-from Person left join Address
-on Person.PersonId = Address.PersonId;
+SELECT firstName, lastName, city, state 
+FROM Person AS p
+LEFT JOIN Address AS a
+ON p.personId = a.personId
+
